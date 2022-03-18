@@ -1,0 +1,26 @@
+
+class print_boundary_element_of_matrix
+{
+	public static void main (String args[]) 
+	{
+		int ar[][]={{1},{2},{3},{4}};
+         int t=0,b=ar.length-1,l=0,r=ar[0].length-1;
+		 for(int i=l;i<=r;i++)
+		 {System.out.print(ar[t][i]+" ");}t++;
+		 for(int i=t;i<=b;i++)
+		 {System.out.print(ar[i][r]+" ");}r--;
+		 if(t<=b)
+		 {
+		 for(int i=r;i>=l;i--)
+		 {System.out.print(ar[b][i]+" ");}b--;
+		}
+		if(l<=r)
+		{
+			for(int i=b;i>=t;i--)
+			{System.out.print(ar[i][l]+" ");}l++;
+		}
+		
+		
+	
+	}
+}
